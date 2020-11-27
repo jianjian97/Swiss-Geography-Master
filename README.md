@@ -30,14 +30,24 @@ $ pip install tkinter
 
 ## Program Structure
 
-### CHAPTER 0: IMPORT DATA AND PACKAGES
-This is a short introduction step to analyze the data and import all packages. This is an important step for the rest of the code to be executed correctly and without errors.
+### Chapter 0: Import data and packages
+This is a short introduction step to analyze the data and import all packages. This is an important step for the rest of the code to be executed correctly and without errors. 
+* Packages imported: pandas, folium, random, tkinter, json, numpy, locale, json
+* Data imported: Population.xlsx, Coordinates.xlsx
+All needed for the further illustration purpose of the map. The data includes all population numbers for the cantons and all coordinates for the pointers (mountains, capitals). We run some cross-checks that everything just appears once and there is no duplicates.
 
-### CHAPTER 1: PRELIMINARY STEPS TO CREATE THE MAP
-In our first part we want to build a map, we prepare all the necessary data in this chapter.
+### Chapter 1: Preliminary steps to create the map
+As first part of the game we want to create a map where the user will find red marker for the location of all Swiss cantons' capitals and blue marker for some Swiss Mountains/Glaciers. To show the map we use the folium package. For creating the marker on the map, we use the .marker function. We also want that when the user clicks on the marker, a message appears with the population of the canton. In this chapter, we prepare the text message in the marker.
 
-### CHAPTER 2: CREATE THE MAP WITH MARKERS
-We create an interactive map, where the user can click on different locations and gain information.
+### Chapter 2: Create the map with markers
+At this stage, we now have our sentences and in our coordinates file, we have the coordinates of all cantons' capital in Switzerland. We can proceed and create the markers in folium.
+
+Markers need the following elements:
+* Coordinates: We find those by using our coordinates file, we know that the fourth column contains the latitutde data and the fith colum the longitude data. We use the brackets to find the relevant longitude and latitude for the relevant canton [line,column].
+* Popup: We want then to specify the text that is written when the user click on the marker (popup). For this we created our list of sentences. Now to be easier to read the code,we specify the popup outside the folium.Marker() function (but it could be written inside directly). We define our popup using the folium.Popup() function. Please note that we use the max_width= and min_width= to definie the size of the box of our popup.
+* Icon: We want our map to be pretty, so let's define our icon. (We found some information using the help(folium.Icon) function. Our map is informative so we want to have an icone with a "i" and therefore select the icon "info-sign" and also want to mark it red, for the user to see the marker well.
+
+We also create an interactive map, where the user can click on different locations and gain information.
 
 ### CHAPTER 3: CHECK WHAT YOU LEARNED
 We make a small pre-quiz for the user and show him the answer on the map for him to learn.
