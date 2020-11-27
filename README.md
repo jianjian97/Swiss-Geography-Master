@@ -17,7 +17,7 @@ For simplicity, we refer to the user as "user" and "student" in the whole code a
 	
 ## Technologies
 * Python version: 3.6
-* Libraries used: pandas, folium, random, tkinter, json, numpy, locale, json (for description refer to [Libraries Description](#libraries-decription))
+* Libraries used: pandas, folium, random, tkinter, json, numpy, locale, json (for description refer to [Libraries Description](#libraries-description))
 	
 ## Setup
 To run this project, we recommend using Jupyter Notebooks/Anaconda. Please also use PowerShell by Anaconda to install the following locally:
