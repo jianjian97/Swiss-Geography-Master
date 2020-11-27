@@ -8,7 +8,7 @@ Fun game to learn more about Switzerland in a few minutes and to improve your kn
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [Program Structure](#program-structure)
-* [Short Libraries Description](#short-libraries-description)
+* [Libraries Description](#libraries-description)
 
 ## General info
 This project's idea is to increase the general awareness of the Swiss geography and to show our students some (fun) facts about Switzerland. The program will be showing where the cantons' capitals are located on the map and will also give the students an intuition about how populated each cantons are. There will also be a few facts about mountains, lakes and other famous sightseeing spots. The program is split up into multiple sections or so-called chapters. There will be a learning section and a gaming section. For more information, please refer to the [Program Structure](#program-structure).
@@ -17,7 +17,7 @@ For simplicity, we refer to the user as "user" and "student" in the whole code a
 	
 ## Technologies
 * Python version: 3.6
-* Libraries used: pandas, folium, random, tkinter, json, numpy, locale, json (for description refer to [Short Libraries Description](#short-libraries-decription))
+* Libraries used: pandas, folium, random, tkinter, json, numpy, locale, json (for description refer to [Libraries Description](#libraries-decription))
 	
 ## Setup
 To run this project, we recommend using Jupyter Notebooks/Anaconda. Please also use PowerShell by Anaconda to install the following locally:
@@ -48,7 +48,7 @@ The user is given a last chance to check for some cities on the map before the g
 ### CHAPTER 5: LET'S START THE GAME!
 The user is then ready to start playing!
 
-## Short Libraries Description
+## Libraries Description
 
 ##### Pandas:
 Pandas is an open-source, BSD licensed library that enables the provision of easy data structure and quicker data analysis for Python. For operations like data analysis and modelling, Pandas makes it possible to carry these out without needing to switch to more domain-specific language like R. Support for operations such as re-indexing, iteration, sorting, aggregations, concatenations and visualizations are among the feature highlights of Pandas. 
