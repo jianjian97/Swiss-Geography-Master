@@ -9,6 +9,7 @@ Fun game to learn more about Switzerland in a few minutes and to improve your kn
 * [Setup](#setup)
 * [Program Structure](#program-structure)
 * [Libraries Description](#libraries-description)
+* [Authors](#authors)
 
 ## General Info
 This project's idea is to increase the general awareness of the Swiss geography and to show our students some (fun) facts about Switzerland. The program will be showing where the cantons' capitals are located on the map and will also give the students an intuition about how populated each cantons are. There will also be a few facts about mountains, lakes and other famous sightseeing spots. The program is split up into multiple sections or so-called chapters. There will be a learning section and a gaming section. For more information, please refer to the [Program Structure](#program-structure).
@@ -17,6 +18,7 @@ For simplicity, we refer to the user as "user" and "student" in the whole code a
 	
 ## Technologies
 * Python version: 3.6
+* Jupyter Notebooks: To install juypter notebooks, please refer to https://jupyter.org/install
 * Libraries used: pandas, folium, random, tkinter, json, numpy, locale, json (for description refer to [Libraries Description](#libraries-description))
 	
 ## Setup
@@ -95,3 +97,9 @@ The tkinter package (“Tk interface”) is the standard Python interface to the
 
 ##### Json:
 JavaScript Object Notation (JSON) is a standardized format commonly used to transfer data as text that can be sent over a network. The json library can parse JSON from strings or files. The library parses JSON into a Python dictionary or list. It can also convert Python dictionaries or lists into JSON strings. 
+
+## Authors
+Zachary Matteucci
+Filippo Coduri
+Nina Tuchschmid
+
