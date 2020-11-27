@@ -100,6 +100,8 @@ JavaScript Object Notation (JSON) is a standardized format commonly used to tran
 
 ## Authors
 Zachary Matteucci
+
 Filippo Coduri
+
 Nina Tuchschmid
 
