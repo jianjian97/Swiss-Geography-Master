@@ -60,7 +60,7 @@ Then, we create the game where we explain the rules, keep the score and account 
 
 Score of the student is printed using the sum function on our score list. There is also a map printed with the two cities asked for students to check visually again.
 
-### CHAPTER 4: LAST CHECK BEFORE THE GAME
+### Chapter 4: Last check before the game
 The user is given a last chance to check for some cities on the map before the game starts.
 We explain the rules to the user and show him our coordinates dataframe. But we don't want to confuse him. We therefore only select the rows with the capitals in the data frame with the .iloc command.
 
@@ -68,7 +68,7 @@ Further, we ask the students to input a number of capitals they would like to ch
 
 At the end, we create a new map that only shows the user input.
 
-### CHAPTER 5: LET'S START THE GAME!
+### Chapter 5: Let's start the game!
 The user is then ready to start playing the game. Note that this is a quiz that contains 30 questions. Each round will randomly extract 5 questions for the user to answer and the maximum score of the game is 5.
 
 The quiz code has been taken from a youtube tutorial (https://www.youtube.com/watch?v=ES8GDaBbgEI&t=1s). Our group amended some of the graphics and also the additional part where the final score will be showing up at the end. We also added a quit button at the end and a "try again" button to restart the quiz (tbd).
