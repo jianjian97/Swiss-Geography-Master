@@ -1,5 +1,7 @@
 # King of Geography
-Student project as part of the course "Programming with Advanced Computer Languages" by Mario Silic in the Autumn Semester 2020. \n Fun game to learn more about Switzerland in a few minutes and to improve your knowledge of Swiss Geography!
+Student project as part of the course "Programming with Advanced Computer Languages" by Mario Silic in the Autumn Semester 2020.
+
+Fun game to learn more about Switzerland in a few minutes and to improve your knowledge of Swiss Geography!
 
 ## Table of contents
 * [General info](#general-info)
