@@ -47,16 +47,31 @@ Markers need the following elements:
 * Popup: We want then to specify the text that is written when the user click on the marker (popup). For this we created our list of sentences. Now to be easier to read the code,we specify the popup outside the folium.Marker() function (but it could be written inside directly). We define our popup using the folium.Popup() function. Please note that we use the max_width= and min_width= to definie the size of the box of our popup.
 * Icon: We want our map to be pretty, so let's define our icon. (We found some information using the help(folium.Icon) function. Our map is informative so we want to have an icone with a "i" and therefore select the icon "info-sign" and also want to mark it red, for the user to see the marker well.
 
-We also create an interactive map, where the user can click on different locations and gain information.
+We create the markers in blue for the cantons' capital and red ones for the landmarks. For the landmarks, we will adjust the function dynamically to account for further new inputs. This means that when we add a new landmark to the list, it will automatically update the map. We do this by counting the numbers of "non-cantons-objects" and appending them to the loop function.
 
-### CHAPTER 3: CHECK WHAT YOU LEARNED
+At the end, we create an interactive map, where the user can click on different locations and gain information.
+
+### Chapter 3: Check what you learned
 We make a small pre-quiz for the user and show him the answer on the map for him to learn.
 
+First, we will create a list of two random cities. For this we use the random packages and the random.sample command. We can calculate how many items we have in total in our coordinates data frame substract the number of mountains/glaciers. Then we use the sample command, and ask it to select 2 elements out of the range of the number of cantons. The two random cantons are stored in the random list with numbers between 0 and 25.
+
+Then, we create the game where we explain the rules, keep the score and account for the input of the user. At the end, we check for the answer of the user with an if function and we will not take any other input than the given "E,W,S,N" answers.
+
+Score of the student is printed using the sum function on our score list. There is also a map printed with the two cities asked for students to check visually again.
+
 ### CHAPTER 4: LAST CHECK BEFORE THE GAME
-The user is given a last chance to check for some cities on the map before the game starts!
+The user is given a last chance to check for some cities on the map before the game starts.
+We explain the rules to the user and show him our coordinates dataframe. But we don't want to confuse him. We therefore only select the rows with the capitals in the data frame with the .iloc command.
+
+Further, we ask the students to input a number of capitals they would like to check and also ask them to input the corresponding abbreviation of the cantons. For the sake of this, we create a dictionary which allocates the right number with the cantons' name. We use our dictionnary to find out which abbreviation is in which row. Like that, the user enters the abbreviation of the canton but we save them as a number.
+
+At the end, we create a new map that only shows the user input.
 
 ### CHAPTER 5: LET'S START THE GAME!
-The user is then ready to start playing!
+The user is then ready to start playing the game. Note that this is a quiz that contains 30 questions. Each round will randomly extract 5 questions for the user to answer and the maximum score of the game is 5.
+
+The quiz code has been taken from a youtube tutorial (https://www.youtube.com/watch?v=ES8GDaBbgEI&t=1s). Our group amended some of the graphics and also the additional part where the final score will be showing up at the end. We also added a quit button at the end and a "try again" button to restart the quiz (tbd).
 
 ## Libraries Description
 
