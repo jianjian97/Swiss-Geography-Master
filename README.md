@@ -1,6 +1,5 @@
 # King of Geography
-Student project as part of the course "Programming with Advanced Computer Languages" by Mario Silic in the Autumn Semester 2020.
-Fun game to learn more about Switzerland in a few minutes and to improve your knowledge of Swiss Geography!
+Student project as part of the course "Programming with Advanced Computer Languages" by Mario Silic in the Autumn Semester 2020. \n Fun game to learn more about Switzerland in a few minutes and to improve your knowledge of Swiss Geography!
 
 ## Table of contents
 * [General info](#general-info)
@@ -12,7 +11,7 @@ Fun game to learn more about Switzerland in a few minutes and to improve your kn
 ## General info
 This project's idea is to increase the general awareness of the Swiss geography and to show our students some (fun) facts about Switzerland. The program will be showing where the cantons' capitals are located on the map and will also give the students an intuition about how populated each cantons are. There will also be a few facts about mountains, lakes and other famous sightseeing spots. The program is split up into multiple sections or so-called chapters. There will be a learning section and a gaming section. For more information, please refer to the [Program Structure](#program-structure).
 
-For simplicity, we refer to the user as "user" and "student" in the whole code and use the masculine pronoun "he". Under the pronoun "he" "him" "his" we wants to include any gender.
+For simplicity, we refer to the user as "user" and "student" in the whole code and use the masculine pronoun "he". Under the pronoun "he" "him" "his" we want to include any gender.
 	
 ## Technologies
 * Python version: 3.6
