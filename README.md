@@ -12,17 +12,17 @@ Fun game to learn more about Switzerland in a few minutes and to improve your kn
 * [Authors](#authors)
 
 ## General Info
-This project's idea is to increase the general awareness of the Swiss geography and to show our students some (fun) facts about Switzerland. The program will be showing where the cantons' capitals are located on the map and will also give the students an intuition about how populated each cantons are. There will also be a few facts about mountains, lakes and other famous sightseeing spots. The program is split up into multiple sections or so-called chapters. There will be a learning section and a gaming section. For more information, please refer to the [Program Structure](#program-structure).
+This project's goal is to increase the general awareness of the Swiss geography and to show our students some (fun) facts about Switzerland. The program shows where the cantons' capitals and other Swiss landmarks are located on the map and also gives the students an intuition about how populated each canton is. There are also a few facts about mountains, lakes and other famous sightseeing spots. The program is divided into multiple sections or so-called chapters. There is a learning section and a gaming section. For more information, please refer to the [Program Structure](#program-structure).
 
-For simplicity, we refer to the user as "user" and "student" in the whole code and use the masculine pronoun "he". Under the pronoun "he" "him" "his" we want to include any gender.
+For simplicity, we refer to the user as "user" or "student" in the whole code and use the masculine pronoun "he". Under the pronouns "he", "him", and "his" we want to include any gender.
 	
 ## Technologies
 * Python version: 3.6
-* Jupyter Notebooks: To install juypter notebooks, please refer to https://jupyter.org/install
-* Libraries used: pandas, folium, random, tkinter, json, numpy, locale, json (for description refer to [Libraries Description](#libraries-description))
+* Jupyter Notebook: To install Juypter Notebook, please refer to https://jupyter.org/install
+* Libraries used: pandas, numpy, locale, folium, random, tkinter, json, math (for description refer to [Libraries Description](#libraries-description))
 	
 ## Setup
-To run this project, we recommend using Jupyter Notebooks/Anaconda. Please also use PowerShell by Anaconda to install the following locally:
+To run this project, we recommend using Jupyter Notebook/Anaconda. Please also use PowerShell by Anaconda to install the following libraries locally:
 
 ```
 $ pip install folium
@@ -34,44 +34,44 @@ $ pip install tkinter
 
 ### Chapter 0: Import data and packages
 This is a short introduction step to analyze the data and import all packages. This is an important step for the rest of the code to be executed correctly and without errors. 
-* Packages imported: pandas, folium, random, tkinter, json, numpy, locale, json
+* Packages imported: pandas, numpy, locale, folium, random, tkinter, json, math
 * Data imported: Population.xlsx, Coordinates.xlsx
 All needed for the further illustration purpose of the map. The data includes all population numbers for the cantons and all coordinates for the pointers (mountains, capitals). We run some cross-checks that everything just appears once and there is no duplicates.
 
 ### Chapter 1: Preliminary steps to create the map
-As first part of the game we want to create a map where the user will find red marker for the location of all Swiss cantons' capitals and blue marker for some Swiss Mountains/Glaciers. To show the map we use the folium package. For creating the marker on the map, we use the .marker function. We also want that when the user clicks on the marker, a message appears with the population of the canton. In this chapter, we prepare the text message in the marker.
+As first part of the game, we create a map where the user finds red markers for the locations of all Swiss cantons' capitals and blue markers for some Swiss landmarks. To show the map we use the folium package. To create the markers on the map, we use the .Marker function. When the user clicks on the marker, a message appears with the population of the canton. In this chapter, we prepare the text message of the markers.
 
 ### Chapter 2: Create the map with markers
-At this stage, we now have our sentences and in our coordinates file, we have the coordinates of all cantons' capital in Switzerland. We can proceed and create the markers in folium.
+At this stage, we now have our sentences and in our coordinates file, we have the coordinates of all cantons' capitals in Switzerland. We can proceed and create the markers in folium.
 
-Markers need the following elements:
-* Coordinates: We find those by using our coordinates file, we know that the fourth column contains the latitutde data and the fith colum the longitude data. We use the brackets to find the relevant longitude and latitude for the relevant canton [line,column].
-* Popup: We want then to specify the text that is written when the user click on the marker (popup). For this we created our list of sentences. Now to be easier to read the code,we specify the popup outside the folium.Marker() function (but it could be written inside directly). We define our popup using the folium.Popup() function. Please note that we use the max_width= and min_width= to definie the size of the box of our popup.
-* Icon: We want our map to be pretty, so let's define our icon. (We found some information using the help(folium.Icon) function. Our map is informative so we want to have an icone with a "i" and therefore select the icon "info-sign" and also want to mark it red, for the user to see the marker well.
+The markers need the following elements:
+* Coordinates: We find those by using our coordinates file, we know that the fourth column contains the latitutde data and the fifth column the longitude data. We use the brackets to find the relevant longitude and latitude for the relevant canton [line,column].
+* Popup: We want then to specify the text that is written when the user click on the marker (popup). For this we created our list of sentences. Now to be easier to read the code, we specify the popup outside the folium.Marker() function (but it could be written inside directly). We define our popup using the folium.Popup() function. Please note that we use the max_width= and min_width= to definie the size of the box of our popup.
+* Icon: We want our map to be pretty, so let's define our icon. (We found some information using the help(folium.Icon) function. Our map is informative so we want to have an icon with an "i" and therefore select the icon "info-sign" and also want to mark it red, for the user to see the marker well.
 
-We create the markers in blue for the cantons' capital and red ones for the landmarks. For the landmarks, we will adjust the function dynamically to account for further new inputs. This means that when we add a new landmark to the list, it will automatically update the map. We do this by counting the numbers of "non-cantons-objects" and appending them to the loop function.
+We create the markers in red for the cantons' capital and blue for the landmarks. For the landmarks, we adjust the function dynamically to account for further new inputs. This means that when we add a new landmark to the list, it will automatically update the map. We do this by counting the numbers of "non-canton-objects" and appending them to the loop function.
 
 At the end, we create an interactive map, where the user can click on different locations and gain information.
 
 ### Chapter 3: Check what you learned
 We make a small pre-quiz for the user and show him the answer on the map for him to learn.
 
-First, we will create a list of two random cities. For this we use the random packages and the random.sample command. We can calculate how many items we have in total in our coordinates data frame substract the number of mountains/glaciers. Then we use the sample command, and ask it to select 2 elements out of the range of the number of cantons. The two random cantons are stored in the random list with numbers between 0 and 25.
+First, we create a list of two random cities. For this we use the random package and the random.sample command. We can calculate how many items we have in total in our coordinates data frame subtracted the number of mountains/glaciers. Then we use the sample command, and ask it to select 2 elements out of the range of the number of cantons. The two random cantons are stored in the random list with numbers between 0 and 25.
 
-Then, we create the game where we explain the rules, keep the score and account for the input of the user. At the end, we check for the answer of the user with an if function and we will not take any other input than the given "E,W,S,N" answers.
+Then, we create the game where we explain the rules, keep the score and account for the input of the user. At the end, we check for the answer of the user with an if function and we do not take any input other than the given "E,W,S,N" answers.
 
-Score of the student is printed using the sum function on our score list. There is also a map printed with the two cities asked for students to check visually again.
+The score of the student is printed using the sum function on our score list. Additionally, the two selected cities are shown on a map for a visual check.
 
 ### Chapter 4: Last check before the game
-The user is given a last chance to check for some cities on the map before the game starts.
-We explain the rules to the user and show him our coordinates dataframe. But we don't want to confuse him. We therefore only select the rows with the capitals in the data frame with the .iloc command.
+The user is given a last chance to check for some capitals on the map before the game starts.
+We explain the rules to the user and show him our coordinates dataframe. But we don't want to confuse him. We therefore only select the rows with the cities in the data frame with the .iloc command.
 
-Further, we ask the students to input a number of capitals they would like to check and also ask them to input the corresponding abbreviation of the cantons. For the sake of this, we create a dictionary which allocates the right number with the cantons' name. We use our dictionnary to find out which abbreviation is in which row. Like that, the user enters the abbreviation of the canton but we save them as a number.
+Furthermore, we ask the student to input a number of capitals that he would like to check and also ask him to input the corresponding abbreviation of the cantons. For the sake of this, we create a dictionary which allocates the right number with the canton's name. We use our dictionary to find out which abbreviation is in which row. Like that, the user enters the abbreviation of the canton but we save them as a number.
 
-At the end, we create a new map that only shows the user input.
+At the end, we create a new map that only shows the user's inputs.
 
 ### Chapter 5: Let's start the game!
-The user is then ready to start playing the game. Note that this is a quiz that contains 30 questions. Each round will randomly extract 5 questions for the user to answer and the maximum score of the game is 5.
+The user is then ready to start playing the game. Note that this is a quiz that contains 30 questions. Each round randomly extracts 5 questions for the user to answer and the maximum score of the game is 5.
 
 The quiz code has been taken from a youtube tutorial (https://www.youtube.com/watch?v=ES8GDaBbgEI&t=1s). Our group amended some of the graphics and also the additional part where the final score will be showing up at the end. We also added a quit button at the end and a "try again" button to restart the quiz (tbd).
 
@@ -96,7 +96,10 @@ The random module implements pseudo-random number generators for various distrib
 The tkinter package (“Tk interface”) is the standard Python interface to the Tk GUI toolkit (Graphical User Interface). When Python is combined with the Tkinter library, it provides a fast and easy way to create GUI applications. In these applications Tkinter provides various controls, such as buttons, labels and text boxes. 
 
 ##### Json:
-JavaScript Object Notation (JSON) is a standardized format commonly used to transfer data as text that can be sent over a network. The json library can parse JSON from strings or files. The library parses JSON into a Python dictionary or list. It can also convert Python dictionaries or lists into JSON strings. 
+JavaScript Object Notation (JSON) is a standardized format commonly used to transfer data as text that can be sent over a network. The json library can parse JSON from strings or files. The library parses JSON into a Python dictionary or list. It can also convert Python dictionaries or lists into JSON strings.
+
+##### Math:
+The math module is a standard module in Python and is always available. The library provides access to the mathematical functions defined by the C standard. All methods of this functions are used for integer or real type objects, not for complex numbers.
 
 ## Authors
 Zachary Matteucci
@@ -104,4 +107,3 @@ Zachary Matteucci
 Filippo Coduri
 
 Nina Tuchschmid
-
