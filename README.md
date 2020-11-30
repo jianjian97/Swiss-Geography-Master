@@ -39,7 +39,7 @@ This is a short introduction step to analyze the data and import all packages. T
 All needed for the further illustration purpose of the map. The data includes all population numbers for the cantons and all coordinates for the pointers (mountains, capitals). We run some cross-checks that everything just appears once and there is no duplicates.
 
 ### Chapter 1: Preliminary steps to create the map
-As first part of the game, we create a map where the user finds red markers for the locations of all Swiss cantons' capitals and blue markers for some Swiss landmarks. To show the map we use the folium package. To create the markers on the map, we use the .Marker function. When the user clicks on the marker, a message appears with the population of the canton. In this chapter, we prepare the text message of the markers.
+As first part of the game, we create a map where the user finds red markers for the locations of all Swiss cantons' capitals and blue markers for some Swiss landmarks. To show the map we use the folium package. To create the markers on the map, we use the `.Marker` function. When the user clicks on the marker, a message appears with the population of the canton. In this chapter, we prepare the text message of the markers.
 
 ### Chapter 2: Create the map with markers
 At this stage, we now have our sentences and in our coordinates file, we have the coordinates of all cantons' capitals in Switzerland. We can proceed and create the markers in folium.
