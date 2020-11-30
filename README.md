@@ -19,7 +19,7 @@ For simplicity, we refer to the user as "user" or "student" in the whole code an
 ## Technologies
 * Python version: 3.6
 * Jupyter Notebook: To install Juypter Notebook, please refer to https://jupyter.org/install
-* Libraries used: pandas, numpy, locale, folium, random, tkinter, json, math (for description refer to [Libraries Description](#libraries-description))
+* Libraries used: `pandas`, `numpy`, `locale`, `folium`, `random`, `tkinter`, `json`, `math` (for description refer to [Libraries Description](#libraries-description))
 	
 ## Setup
 To run this project, we recommend using Jupyter Notebook/Anaconda. Please also use PowerShell by Anaconda to install the following libraries locally:
