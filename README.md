@@ -33,7 +33,7 @@ $ pip install tkinter
 ## Program Structure
 
 ### Chapter 0: Import data and packages
-```This``` is a short introduction step to analyze the data and import all packages. This is an important step for the rest of the code to be executed correctly and without errors. 
+This is a short introduction step to analyze the data and import all packages. This is an important step for the rest of the code to be executed correctly and without errors. 
 * Packages imported: pandas, numpy, locale, folium, random, tkinter, json, math
 * Data imported: Population.xlsx, Coordinates.xlsx
 All needed for the further illustration purpose of the map. The data includes all population numbers for the cantons and all coordinates for the pointers (mountains, capitals). We run some cross-checks that everything just appears once and there is no duplicates.
