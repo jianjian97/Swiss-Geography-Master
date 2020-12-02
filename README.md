@@ -25,38 +25,38 @@ $ pip install folium
 $ pip install pandas
 $ pip install tkinter
 ```
-Before running the program, it is fundamental to export and save locally all the files that are collected on this GitHub repository (code, Excel files, figures, ...).  
+Before running the program, it is fundamental to export and save locally all the files that are collected on this GitHub repository (code, Excel files, figures, ...), or the program will be incomplete and will show errors. 
 
 ## Program Structure
 
 ### Chapter 0: Import data and packages
-As introduction step, you import the packages and the data. This is important for the rest of the code to run correctly and without errors.
+As introduction step, the user imports the packages and the data. This is important for the rest of the code to run correctly and without errors.
 * Packages to import: `pandas`, `numpy`, `locale`, `folium`, `random`, `tkinter`, `json`, `math`
 * Data to import: `Population.xlsx`, `Coordinates.xlsx`. The data in those tables are needed for the further illustration purpose of the map. The data includes the population numbers for the cantons and all coordinates for the pointers (capitals and landmarks).
 
 ### Chapter 1: Preliminary steps to create the map
-As first part of the game, we create a map where the user finds red markers for the locations of all Swiss cantons' capitals and blue markers for some Swiss landmarks. To show the map we use the `folium` package. To create the markers on the map, we use the `.Marker` function. When the user clicks on the marker, a message appears with the population of the canton. In this chapter, we prepare the text message of the markers.
+In this chapter the code prepares and defines the functions and the objects necessary to later create the map, where the user finds the locations of the Swiss cantons' capitals and of some Swiss landmarks. To show the map the program uses the `folium` package. To create the markers on the map the program uses the `.Marker` function. When the user clicks on the marker of a capital, a message appears with the population of the respective canton. This section prepares and prints the text messages of the markers.
 
-### Chapter 2: Create the map with markers
-At this stage, we now have our sentences and in our coordinates file, we have the coordinates of all cantons' capitals in Switzerland. We can proceed and create the markers in `folium`.
+### Chapter 2: Creation of map and markers
+This section is responsible for the display of the map, the markers, and the popup messages. The code starts with the creation of the markers in `folium`.
 
 The markers need the following elements:
-* Coordinates: We find those by using our coordinates file, we know that the fourth column contains the latitutde data and the fifth column the longitude data. We use the brackets to find the relevant longitude and latitude for the relevant canton [line,column].
-* Popup: We want then to specify the text that is written when the user click on the marker (popup). For this we created our list of sentences. Now to be easier to read the code, we specify the popup outside the `folium.Marker()` function (but it could be written inside directly). We define our popup using the `folium.Popup()` function. Please note that we use the `max_width=` and `min_width=` to definie the size of the box of our popup.
-* Icon: We want our map to be pretty, so let's define our icon. (We found some information using the `help(folium.Icon)` function. Our map is informative so we want to have an icon with an "i" and therefore select the icon "info-sign" and also want to mark it red, for the user to see the marker well.
+* Coordinates: These are collected in the file `Coordinates.xlsx`. We find and import the latitude and longitude data from the fourth and fifth column, respectively.
+* Popup: This is the message that appears when the user clicks on the tooltip of the marker. The code creates a list of sentences for the popup messages. For ease of reading, the popup is defined with the `folium.Popup()` function outside of the `folium.Marker()` function. The size of the popup box results from the use of `max_width=` and `min_width=`.
+* Icon: For aesthetic reasons the program creates visually pleasing icons (background information can be obtained with the `help(folium.Icon)` function). The difinition of the icon prints the information sign "i" and two different colours.
 
-We create the markers in red for the cantons' capital and blue for the landmarks. For the landmarks, we adjust the function dynamically to account for further new inputs. This means that when we add a new landmark to the list, it will automatically update the map. We do this by counting the numbers of "non-canton-objects" and appending them to the loop function.
+The code displays markers in red for the cantons' capitals and in blue for the landmarks. For the landmarks, it is possible to adjust the function dynamically to account for further new inputs. This means that when a new landmark is added to the list, the map updates itself automatically (by counting the numbers of "non-canton-objects" and appending them to the loop function).
 
-At the end, we create an interactive map, where the user can click on different locations and gain information.
+The final result is therefore an interactive and informative map, where the user can click on different locations and gain information.
 
-### Chapter 3: Check what you learned
-We make a small pre-quiz for the user and show him the answer on the map for him to learn.
+### Chapter 3: Location warm-up
+This chapter creates a small pre-quiz and tests the user about the locations of the cantons' capitals. The answers are then shown on the map for further study.
 
-First, we create a list of two random cities. For this we use the random package and the random.sample command. We can calculate how many items we have in total in our coordinates data frame subtracted the number of mountains/glaciers. Then we use the sample command, and ask it to select 2 elements out of the range of the number of cantons. The two random cantons are stored in the random list with numbers between 0 and 25.
+First, the code creates a list of two random cities with the `random` package and the `random.sample` command. With the sample command the program selects 2 elements out of the range of the number of cantons. The two random cantons are stored in the random list with numbers between 0 and 25.
 
-Then, we create the game where we explain the rules, keep the score and account for the input of the user. At the end, we check for the answer of the user with an if function and we do not take any input other than the given "E,W,S,N" answers.
+Then, the code creates the game with rules, score, and memory of the user's input. The program checks the answer of the user with an `if` function (only the following inputs are accepted: "E,W,S,N").
 
-The score of the student is printed using the sum function on our score list. Additionally, the two selected cities are shown on a map for a visual check.
+Finally, the score is printed using the `sum` function on our score list, and the two selected cities are shown on the map for a visual check.
 
 ### Chapter 4: Last check before the game
 The user is given a last chance to check for some capitals on the map before the game starts.
@@ -103,3 +103,4 @@ Zachary Matteucci
 Filippo Coduri
 
 Nina Tuchschmid
+
