@@ -6,7 +6,7 @@ Hi there! You just found the student project "Swiss Geography Master", which is 
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [Program Structure](#program-structure)
-* [Libraries Description](#libraries-description)
+* [Appendix - Libraries Description](#appendix---libraries-description)
 * [Authors](#authors)
 
 ## General Information
@@ -15,7 +15,7 @@ The goal of this project is to increase the general awareness of Switzerland's g
 ## Technologies
 * Python version: 3.8.3
 * Jupyter Notebook: To install Juypter Notebook, please refer to https://jupyter.org/install
-* Libraries used: `pandas`, `numpy`, `locale`, `folium`, `random`, `tkinter`, `json`, `math` (for their descriptions refer to [Libraries Description](#libraries-description))
+* Libraries used: `pandas`, `numpy`, `locale`, `folium`, `random`, `tkinter`, `json`, `math` (for their descriptions refer to [Appendix - Libraries Description](#appendix---libraries-description))
 	
 ## Setup
 To run this program, it is recommended to use Jupyter Notebook/Anaconda. Please also use PowerShell by Anaconda to install the following libraries locally:
@@ -59,19 +59,28 @@ Then, the code creates the game with rules, score, and memory of the user's inpu
 Finally, the score is printed using the `sum` function on our score list, and the two selected cities are shown on the map for a visual check.
 
 ### Chapter 4: Last check before the game
-The user is given a last chance to check for some capitals on the map before the game starts.
-We explain the rules to the user and show him our coordinates dataframe. But we don't want to confuse him. We therefore only select the rows with the cities in the data frame with the `.iloc` command.
+The user is given a last chance to check for some capitals on the map before the game starts. The code explains the procedure to the user and shows the coordinates dataframe. To avoid confusion the program only selects the rows with the cities in the data frame with the `.iloc` command.
 
-Furthermore, we ask the student to input a number of capitals that he would like to check and also ask him to input the corresponding abbreviation of the cantons. For the sake of this, we create a dictionary which allocates the right number with the canton's name. We use our dictionary to find out which abbreviation is in which row. Like that, the user enters the abbreviation of the canton but we save them as a number.
+Furthermore, the user is asked to input the number of capitals that he would like to check and also to input the abbreviations of the interested cantons. For the sake of this, the program needs a dictionary that allocates the right number with the corresponding canton's name. The dictionary finds which abbreviation is in which row. That way, the code reads a number even though the user enters the abbreviation of the canton.
 
-At the end, we create a new map that only shows the user's inputs.
+At the end, the program displays the new map with only the user's choices.
 
-### Chapter 5: Let's start the game!
-The user is then ready to start playing the game. Note that this is a quiz that contains 30 questions. Each round randomly extracts 5 questions for the user to answer and the maximum score of the game is 5.
+### Chapter 5: Final quiz with GUI!
+The user is then ready to start playing the game. The code creates a quiz on a GUI (Graphical User Interface) with a total of 30 different questions. In each round the program randomly extracts 5 questions for the user to answer. The maximum score achievable of each round is 5 points (one for each question).
 
 The quiz code has been taken from a youtube tutorial (https://www.youtube.com/watch?v=ES8GDaBbgEI&t=1s). Our group amended some of the graphics and also the additional part where the final score will be showing up at the end. We also added a quit button at the end and a "try again" button to restart the quiz.
 
-## Libraries Description
+Give it a try and we hope you like the Swiss Geography Master! 
+
+## Authors
+Zachary Matteucci
+
+Filippo Coduri
+
+Nina Tuchschmid
+
+
+## Appendix - Libraries Description
 
 ##### Pandas:
 `pandas` is an open-source, BSD licensed library that enables the provision of easy data structure and quicker data analysis for Python. For operations like data analysis and modelling, `pandas` makes it possible to carry these out without needing to switch to more domain-specific language like R. Support for operations such as re-indexing, iteration, sorting, aggregations, concatenations and visualizations are among the feature highlights of `pandas`. 
@@ -96,11 +105,4 @@ JavaScript Object Notation (JSON) is a standardized format commonly used to tran
 
 ##### Math:
 The `math` module is a standard module in Python and is always available. The library provides access to the mathematical functions defined by the C standard. All methods of this functions are used for integer or real type objects, not for complex numbers.
-
-## Authors
-Zachary Matteucci
-
-Filippo Coduri
-
-Nina Tuchschmid
 
