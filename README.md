@@ -43,7 +43,7 @@ This section is responsible for the display of the map, the markers, and the pop
 The markers need the following elements:
 * Coordinates: These are collected in the file `Coordinates.xlsx`. We find and import the latitude and longitude data from the fourth and fifth column, respectively.
 * Popup: This is the message that appears when the user clicks on the tooltip of the marker. The code creates a list of sentences for the popup messages. For ease of reading, the popup is defined with the `folium.Popup()` function outside of the `folium.Marker()` function. The size of the popup box results from the use of `max_width=` and `min_width=`.
-* Icon: For aesthetic reasons the program creates visually pleasing icons (background information can be obtained with the `help(folium.Icon)` function). The difinition of the icon prints the information sign "i" and two different colours.
+* Icon: For aesthetic reasons the program creates visually pleasing icons (background information can be obtained with the `help(folium.Icon)` function). The definition of the icon prints the information sign "i" and two different colours.
 
 The code displays markers in red for the cantons' capitals and in blue for the landmarks. For the landmarks, it is possible to adjust the function dynamically to account for further new inputs. This means that when a new landmark is added to the list, the map updates itself automatically (by counting the numbers of "non-canton-objects" and appending them to the loop function).
 
@@ -68,7 +68,14 @@ At the end, the program displays the new map with only the user's choices.
 ### Chapter 5: Final quiz with GUI!
 The user is then ready to start playing the game. The code creates a quiz on a GUI (Graphical User Interface) with a total of 30 different questions. In each round the program randomly extracts 5 questions for the user to answer. The maximum score achievable of each round is 5 points (one for each question).
 
-The quiz code has been taken from a youtube tutorial (https://www.youtube.com/watch?v=ES8GDaBbgEI&t=1s). Our group amended some of the graphics and also the additional part where the final score will be showing up at the end. We also added a quit button at the end and a "try again" button to restart the quiz.
+The quiz code has been taken from a youtube tutorial (https://www.youtube.com/watch?v=ES8GDaBbgEI&t=1s). The basics were already given with a start page and start button. Further, the quiz pages with the multiple choices and at the end a page with a funny cartoon were already part of the game.
+
+Our group amends the following points in the quiz:
+* Basics: Start page image, start button, final page cartoons, size, titles, fonts, quiz questions, points given for each correct answer.
+* Added value: Show final score of the user, "Play Again" button, "Exit" button.
+
+The "Play Again" button is introduced at the end of the game and destroys all of the graphics on the final page, resets the randomized list of the questions and the score, and brings the user back to the first question of the game (calling function `startquiz`).
+The "Exit" button is also introduced at the end of the game and destroys the whole game. It just exercises the function `game.destroy`. 
 
 Give it a try and we hope you like the Swiss Geography Master! 
 
@@ -78,6 +85,8 @@ Zachary Matteucci
 Filippo Coduri
 
 Nina Tuchschmid
+
+
 
 
 ## Appendix - Libraries Description
