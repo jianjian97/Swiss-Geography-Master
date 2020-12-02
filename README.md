@@ -75,7 +75,9 @@ Our group amends the following points in the quiz:
 * Added value: Show final score of the user, "Play Again" button, "Exit" button, Game Summary
 
 The "Play Again" button is introduced at the end of the game and destroys all of the graphics on the final page, resets the randomized list of the questions and the score, and brings the user back to the first question of the game (calling function `startquiz`).
+
 The "Exit" button is also introduced at the end of the game and destroys the whole game. It just exercises the function `game.destroy`. 
+
 The "Game Summary" at the end of the quiz is printed in the main console. It shows an overview of the final score and the corresponding questions with the right answers.
 
 Give it a try and we hope you like the Swiss Geography Master! 
