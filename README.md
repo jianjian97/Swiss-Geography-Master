@@ -10,30 +10,29 @@ Hi there! You just found the student project "Swiss Geography Master", which is 
 * [Authors](#authors)
 
 ## General Information
-This project's goal is to increase the general awareness of the Swiss geography and to show our students some (fun) facts about Switzerland. The program shows where the cantons' capitals and other Swiss landmarks are located on the map and also gives the students an intuition about how populated each canton is. There are also a few facts about mountains, lakes and other famous sightseeing spots. The program is divided into multiple sections or so-called chapters. There is a learning section and a gaming section. For more information, please refer to the [Program Structure](#program-structure).
-
-For simplicity, we refer to the user as "user" or "student" in the whole code and use the masculine pronoun "he". Under the pronouns "he", "him", and "his" we want to include any gender.
+The goal of this project is to increase the general awareness of Switzerland's geography and to entertainingly teach the user some fun facts and numbers about the country. The program shows on the map where the cantons' capitals and other Swiss landmarks are located and gives the user an intuition about how populated each canton is. The program is divided into multiple chapters and it transitions from a learning section to a game section. For simplicity, in the whole code we refer to the user as "user" or "he", and under the pronouns "he", "him", and "his" we include every gender.
 	
 ## Technologies
 * Python version: 3.8.3
 * Jupyter Notebook: To install Juypter Notebook, please refer to https://jupyter.org/install
-* Libraries used: `pandas`, `numpy`, `locale`, `folium`, `random`, `tkinter`, `json`, `math` (for description refer to [Libraries Description](#libraries-description))
+* Libraries used: `pandas`, `numpy`, `locale`, `folium`, `random`, `tkinter`, `json`, `math` (for their descriptions refer to [Libraries Description](#libraries-description))
 	
 ## Setup
-To run this project, we recommend using Jupyter Notebook/Anaconda. Please also use PowerShell by Anaconda to install the following libraries locally:
+To run this program, it is recommended to use Jupyter Notebook/Anaconda. Please also use PowerShell by Anaconda to install the following libraries locally:
 
 ```
 $ pip install folium
 $ pip install pandas
 $ pip install tkinter
 ```
+Before running the program, it is fundamental to export and save locally all the files that are collected on this GitHub repository (code, Excel files, figures, ...).  
 
 ## Program Structure
 
 ### Chapter 0: Import data and packages
-This is a short introduction step to analyze the data and import all packages. This is an important step for the rest of the code to be executed correctly and without errors. 
-* Packages imported: `pandas`, `numpy`, `locale`, `folium`, `random`, `tkinter`, `json`, `math`
-* Data imported: `Population.xlsx`, `Coordinates.xlsx`. All needed for the further illustration purpose of the map. The data includes all population numbers for the cantons and all coordinates for the pointers (mountains, capitals). We run some cross-checks that everything just appears once and there is no duplicates.
+As introduction step, you import the packages and the data. This is important for the rest of the code to run correctly and without errors.
+* Packages to import: `pandas`, `numpy`, `locale`, `folium`, `random`, `tkinter`, `json`, `math`
+* Data to import: `Population.xlsx`, `Coordinates.xlsx`. The data in those tables are needed for the further illustration purpose of the map. The data includes the population numbers for the cantons and all coordinates for the pointers (capitals and landmarks).
 
 ### Chapter 1: Preliminary steps to create the map
 As first part of the game, we create a map where the user finds red markers for the locations of all Swiss cantons' capitals and blue markers for some Swiss landmarks. To show the map we use the `folium` package. To create the markers on the map, we use the `.Marker` function. When the user clicks on the marker, a message appears with the population of the canton. In this chapter, we prepare the text message of the markers.
@@ -104,4 +103,3 @@ Zachary Matteucci
 Filippo Coduri
 
 Nina Tuchschmid
-
