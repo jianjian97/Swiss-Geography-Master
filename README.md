@@ -6,8 +6,8 @@ Hi there! You just found the student project "Swiss Geography Master", which is 
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [Program Structure](#program-structure)
-* [Appendix - Libraries Description](#appendix---libraries-description)
 * [Authors](#authors)
+* [Appendix - Libraries Description](#appendix---libraries-description)
 
 ## General Information
 The goal of this project is to increase the general awareness of Switzerland's geography and to entertainingly teach the user some fun facts and numbers about the country. The program shows on the map where the cantons' capitals and other Swiss landmarks are located and gives the user an intuition about how populated each canton is. The program is divided into multiple chapters and it transitions from a learning section to a game section. For simplicity, in the whole code we refer to the user as "user" or "he", and under the pronouns "he", "him", and "his" we include every gender.
@@ -105,4 +105,5 @@ JavaScript Object Notation (JSON) is a standardized format commonly used to tran
 
 ##### Math:
 The `math` module is a standard module in Python and is always available. The library provides access to the mathematical functions defined by the C standard. All methods of this functions are used for integer or real type objects, not for complex numbers.
+
 
