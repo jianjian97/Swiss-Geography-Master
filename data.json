@@ -1,0 +1,216 @@
+[
+    {
+        "1": "What is the approximate population of the Canton of Neuchâtel?",
+        "2": "What is the approximate population of the Canton of Ticino?",
+        "3": "What is the capital of the Canton of Nidwalden?",
+        "4": "Where is the biggest glacier of Switzerland located?",
+        "5": "Which of the below is a famous river in Ticino?",
+        "6": "What is the capital of the Canton of Uri?",
+        "7": "Where is the highest mountain of Switzerland located?",
+        "8": "Which one of these cantons does not border the Canton of Bern?",
+        "9": "Which of these lakes is the biggest if you only count their area within Switzerland's borders?",
+        "10": "What is the approximate distance as the crow flies from Geneva to Zurich?",
+        "11": "What is the highest mountain of Switzerland?",
+        "12": "What is the capital of the Canton of Appenzell Ausserrhoden?",
+        "13": "Which of the below is the longest river?",
+        "14": "Where is the lowest point of Switzerland?",
+        "15": "In which canton is the Creux du Van located, a huge natural rocky 'amphitheatre'?",
+        "16": "Among the cantons below, which one is the most populous?",
+        "17": "In which city can you admire the Kapellbrücke (literally, Chapel Bridge)?",
+        "18": "What is the approximate population of Switzerland?",
+        "19": "With a boat you are navigating the Rhône. Where can you NOT be?",
+        "20": "Which of the cantons below does not touch the Vierwaldstättersee (Lake Lucerne)?",
+        "21": "Which of the below is not officially spoken in the Canton of Graubünden?",
+        "22": "What percentage of the Swiss population speaks Italian as principal language?",
+        "23": "If I am admiring the Chillon Castle, where am I?",
+        "24": "Since I love fossils, I have to visit the 'Fossil Mountain'. Where should I go?",
+        "25": "What is the tallest building in Switzerland?",
+        "26": "If I am sitting inside the Einstein House, where the genius lived for 2 years, where am I?",
+        "27": "If I am standing on the Säntis (mountain), in which canton of the below can I not be?",
+        "28": "A well-known legend narrates that the Devil built a bridge in the Swiss mountains. If I am walking on it, where am I?",
+        "29": "If I am admiring the most powerful waterfall in Europe, where am I?",
+        "30": "If I want to be a salt miner, where should I move to?"
+    },
+    {
+        "1": [
+            "170,000",              
+            "250,000",
+            "355,000",
+            "500,000"
+        ],
+        "2": [
+            "230,000",
+            "350,000",             
+            "520,000",
+            "600,000"
+        ],
+        "3": [
+            "Sarnen",
+            "Stans",               
+            "Liestal",
+            "Altdorf"
+        ],
+        "4": [
+            "Canton of Bern",
+            "Canton of Graubünden",
+            "Canton of Jura",
+            "Canton of Valais"     
+        ],
+        "5": [
+            "Maggia",             
+            "Aare",
+            "Rhein",
+            "Limmat"
+        ],
+        "6": [
+            "Schwyz",
+            "Sarnen",
+            "Glarus",
+            "Altdorf"             
+        ],
+        "7": [
+            "Canton of Bern",
+            "Canton of Graubünden",
+            "Canton of Jura",
+            "Canton of Valais"    
+        ],
+        "8": [
+            "Canton of Jura",
+            "Canton of Obwalden",
+            "Canton of Basel Landschaft",  
+            "Canton of Solothurn"
+        ],
+        "9": [
+            "Lake Geneva",         
+            "Lake Neuchâtel",
+            "Lake Zurich",
+            "Lake Constance"
+        ],
+        "10": [
+            "220km",               
+            "280km",
+            "320km",
+            "380km"
+        ],
+        "11": [
+            "Matterhorn",
+            "Grand Combin",
+            "Jungfrau",
+            "Monte Rosa"           
+        ],
+        "12": [
+            "Appenzell",
+            "Herisau",              
+            "Glarus",
+            "Frauenfeld"
+        ],
+        "13": [
+            "Aare",                
+            "Rhine",               
+            "Rhône",               
+            "Limmat"               
+        ],
+        "14": [
+            "Geneva",    
+            "Basel",
+            "Lake Maggiore",       
+            "Lake Constance"
+        ],
+        "15": [
+            "Canton of Geneva",
+            "Canton of Valais",
+            "Canton of Graubünden",
+            "Canton of Neuchâtel"  
+        ],
+        "16": [
+            "Canton of Lucerne",     
+            "Canton of Geneva",      
+            "Canton of St. Gallen",  
+            "Canton of Aargau"       
+        ],
+        "17": [
+            "Lucerne",             
+            "Zurich",
+            "Bern",
+            "Basel"
+        ],
+        "18": [
+            "9.0 million",
+            "8.5 million",             
+            "8.0 million",
+            "7.5 million"
+        ],
+        "19": [
+            "Geneva",
+            "Sion",
+            "Delémont",           
+            "Lausanne"
+        ],
+        "20": [
+            "Canton of Zug",       
+            "Canton of Nidwalden",
+            "Canton of Uri",
+            "Canton of Schwyz"
+        ],
+        "21": [
+            "Italian",
+            "Romansh",
+            "German",
+            "French"               
+        ],
+        "22": [
+            "14 %",
+            "12 %",
+            "10 %",
+            " 8 %"                 
+        ],
+        "23": [
+            "Canton of Vaud",      
+            "Canton of Neuchâtel",
+            "Canton of Fribourg",
+            "Canton of Geneva"
+        ],
+        "24": [
+            "Canton of Graubünden",
+            "Canton of Valais",
+            "Canton of Appenzell Ausserrhoden",
+            "Canton of Ticino"     
+        ],
+        "25": [
+            "Prime Tower",
+            "Basler Messeturm",
+            "Vulcano Tower",
+            "Roche Tower"         
+        ],
+        "26": [
+            "Bern",                
+            "Zurich",
+            "Basel",
+            "St. Gallen"
+        ],
+        "27": [
+            "Canton of Appenzell Ausserrhoden",
+            "Canton of Appenzell Innerrhoden",
+            "Canton of Graubünden",
+            "Canton of St. Gallen"
+        ],
+        "28": [
+            "Canton of Graubünden",
+            "Canton of Uri",       
+            "Canton of Valais",
+            "Canton of Ticino"
+        ],
+        "29": [
+            "Luzern",
+            "Chur",
+            "Sion",
+            "Schaffhausen"         
+        ],
+        "30": [
+            "Canton of Valais",
+            "Canton of Vaud",      
+            "Canton of Glarus",
+            "Canton of Obwalden"
+        ]
+    }
+]
