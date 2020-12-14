@@ -18,7 +18,7 @@ The goal of this project is to increase the general awareness of Switzerland's g
 * Libraries used: `pandas`, `numpy`, `locale`, `folium`, `random`, `tkinter`, `json`, `math` (for their descriptions refer to [Appendix - Libraries Description](#appendix---libraries-description))
 	
 ## Setup
-To run this program, it is recommended to use Jupyter Notebook/Anaconda. Please also use PowerShell by Anaconda to install the following libraries locally:
+To run this program, it is recommended to use Jupyter Notebook/Anaconda. Additionally, it is necessary to have installed the above listed libraries. If not installed yet or if not already part of the Anaconda distribution, please install them locally with PowerShell by Anaconda giving the appropriate commands as in the following examples:
 
 ```
 $ pip install folium
