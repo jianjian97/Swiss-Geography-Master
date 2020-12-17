@@ -61,9 +61,7 @@ Finally, the score is printed using the `sum` function on our score list, and th
 ### Chapter 4: Last check before the game
 The user is given a last chance to check for some capitals on the map before the game starts. The code explains the procedure to the user and shows the coordinates dataframe. To avoid confusion the program only selects the rows with the cities in the data frame with the `.iloc` command.
 
-Furthermore, the user is asked to input the number of capitals that he would like to check and also to input the abbreviations of the interested cantons. For the sake of this, the program needs a dictionary that allocates the right number with the corresponding canton's name. The dictionary finds which abbreviation is in which row. That way, the code reads a number even though the user enters the abbreviation of the canton.
-
-At the end, the program displays the new map with only the user's choices.
+Furthermore, the user is asked to input the number of capitals that he would like to check and also to input the abbreviations of the interested cantons. At the end, the program displays the new map with only the user's choices.
 
 ### Chapter 5: Final quiz with GUI!
 The user is then ready to start playing the game. The code creates a quiz on a GUI (Graphical User Interface) with a total of 30 different questions. In each round the program randomly extracts 5 questions for the user to answer. The maximum score achievable of each round is 5 points (one for each question).
